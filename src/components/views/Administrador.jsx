@@ -4,7 +4,7 @@ import Item from "../admiProductos/ItemProducto";
 
 const Administrador = () => {
     return (
-        <Container>
+        <Container className="mainSection">
             <h1 className="display-3 text-center mt-4">Productos disponibles</h1>
             <hr />
             <Table striped bordered hover responsive>

@@ -1,20 +1,22 @@
 import React from "react";
-import { Badge, Card, Container } from "react-bootstrap";
+import { Badge, Card, Container, Row, Col } from "react-bootstrap";
 
 const DetalleProducto = () => {
   return (
-    <Container className="my-5">
-      <Card className="flex-row px-3">
-        <Card.Img className="w-25" src="https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-        <Card.Body>
-          <Card.Title className="fw-semibold fs-3" >Brownie</Card.Title>
-          <hr />
-          <Badge bg="success" >Dulce</Badge>
-          <Card.Text className="fw-semibold fs-5">
-            Precio: $300
-          </Card.Text>
-        </Card.Body>
-      </Card>
+    <Container className="mainSection">
+       <Card className='container my-5 mainSection'>
+            <Row className='w-75'>
+                <Col md={6}>
+                    <img src='https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='brownie' className="w-100" />
+                </Col>
+                <Col md={6} className="py-3">
+                <h3>Brownie</h3>
+                <hr/>
+                <Badge bg="success">Dulce</Badge>
+                <p className='mt-3'><b>Precio: $300</b></p>
+                </Col>
+            </Row>
+        </Card>
     </Container>
   );
 };

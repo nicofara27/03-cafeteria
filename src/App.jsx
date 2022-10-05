@@ -6,10 +6,14 @@ import Administrador from './components/views/Administrador';
 import DetalleProducto from './components/views/DetalleProducto';
 import Error404 from './components/views/Error404';
 import Inicio from './components/views/Inicio';
+import Menu from './components/common/Menu'
+import Footer from './components/common/Footer'
+import './app.css'
 
 function App() {
   return (  
     <BrowserRouter>
+    <Menu></Menu>
       <Routes>
         <Route exact path='/' element={<Inicio></Inicio>}></Route>
         <Route exact path='/detalle' element={<DetalleProducto></DetalleProducto>}></Route>
@@ -18,6 +22,7 @@ function App() {
         <Route exact path='/editar' element={<EditarProducto></EditarProducto>}></Route>
         <Route exact path='*' element={<Error404></Error404>}></Route>
       </Routes>
+      <Footer></Footer>
     </BrowserRouter>
   );
 }
