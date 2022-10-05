@@ -1,11 +1,14 @@
-import { Container, Table } from "react-bootstrap";
+import { Container, Table, Button } from "react-bootstrap";
 import Item from "../admiProductos/ItemProducto";
 
 
 const Administrador = () => {
     return (
         <Container className="mainSection">
-            <h1 className="display-3 text-center mt-4">Productos disponibles</h1>
+          <div className="d-flex justify-content-between align-items-center mt-5">
+            <h1 className="display-3 text-center">Productos disponibles</h1>
+            <Button>Agregar</Button>
+          </div>
             <hr />
             <Table striped bordered hover responsive>
       <thead>
