@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { Container, Table, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Button, Table } from "react-bootstrap";
 import Swal from "sweetalert2";
-import Item from "../admiProductos/ItemProducto";
 import { consultarAPI } from "../helpers/queries";
+import ItemProducto from "./admiProductos/ItemProducto";
+import {Link} from 'react-router-dom';
 
 const Administrador = () => {
   const [productos, setProductos] = useState([]);
@@ -11,12 +11,12 @@ const Administrador = () => {
   useEffect(() => {
     consultarAPI().then(
       (respuesta) => {
-        //La respuesta es exitosa
+        //la respuesta es exitosa
         setProductos(respuesta);
       },
       (reason) => {
         console.log(reason);
-        //Se podria mostrar un mensaje al usuario
+        //mostrar un mensaje al usuario
         Swal.fire(
           'Ocurrio un error',
           'Intentelo nuevamente en unos minutos',
@@ -27,30 +27,38 @@ const Administrador = () => {
   }, []);
 
   return (
-    <Container className="mainSection">
+    <section className="container mainSection">
       <div className="d-flex justify-content-between align-items-center mt-5">
-        <h1 className="display-3 text-center">Productos disponibles</h1>
-        <Button as={Link} to="/administrar/crear">
+        <h1 className="display-4 ">Productos disponibles</h1>
+        <Link className="btn btn-primary" to='/administrar/crear'>
           Agregar
-        </Button>
+        </Link>
       </div>
       <hr />
-      <Table striped bordered hover responsive>
+      <Table responsive striped bordered hover>
         <thead>
-          <tr className="fw-semibold">
+          <tr>
             <th>Cod</th>
             <th>Producto</th>
             <th>Precio</th>
-            <th>URL de imagen</th>
+            <th>URL de Imagen</th>
             <th>Categoria</th>
             <th>Opciones</th>
           </tr>
         </thead>
         <tbody>
-          <Item></Item>
+          {/* aqui tengo que hacer un map */}
+          {
+            // opcion 1
+            // productos.map((producto)=> {return <ItemProducto key={producto.id} producto={producto}></ItemProducto>} )
+            // opcion 2
+            // productos.map((producto)=> <ItemProducto key={producto.id} {...producto}></ItemProducto> )
+            // opcion 3
+            productos.map((producto)=> <ItemProducto key={producto.id} producto={producto}></ItemProducto> )
+          }
         </tbody>
       </Table>
-    </Container>
+    </section>
   );
 };
 

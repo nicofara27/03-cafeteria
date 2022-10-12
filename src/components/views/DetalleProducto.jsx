@@ -1,10 +1,9 @@
-import React from "react";
-import { Badge, Card, Container, Row, Col } from "react-bootstrap";
+import { Badge, Card, Col, Row } from 'react-bootstrap';
 
 const DetalleProducto = () => {
-  return (
-    <Container className="mainSection">
-       <Card className='container my-5 mainSection'>
+    
+    return (
+        <Card className='container my-5 mainSection'>
             <Row className='w-75'>
                 <Col md={6}>
                     <img src='https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='brownie' className="w-100" />
@@ -17,8 +16,7 @@ const DetalleProducto = () => {
                 </Col>
             </Row>
         </Card>
-    </Container>
-  );
+    );
 };
 
 export default DetalleProducto;
