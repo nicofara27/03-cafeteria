@@ -22,46 +22,18 @@
       "id": 3
     },
     {
-      "nombreProducto": "cafe",
-      "precio": "1534",
-      "imagen": "https://www.youtube.com/",
-      "categoria": "dulce",
+      "nombreProducto": "Te",
+      "precio": "450",
+      "imagen": "https://images.pexels.com/photos/161559/background-bitter-breakfast-bright-161559.jpeg?auto=compress&cs=tinysrgb&w=126",
+      "categoria": "bebida-caliente",
       "id": 4
     },
     {
-      "nombreProducto": "Te",
-      "precio": "300",
-      "imagen": "https://pics.filmaffinity.com/the_avengers-439499921-mmed.jpg",
-      "categoria": "bebida-fria",
-      "id": 5
-    },
-    {
-      "nombreProducto": "asdasd",
-      "precio": "123",
-      "imagen": "https://scene7.zumiez.com/is/image/zumiez/product_main_medium_2x/Primitive-x-Naruto-Shippuden-Hidan-Black-Coaches-Jacket-_363534-front-US.jpg",
-      "categoria": "dulce",
-      "id": 6
-    },
-    {
-      "nombreProducto": "cafe",
-      "precio": "123",
-      "imagen": "https://pics.filmaffinity.com/the_lord_of_the_rings_the_return_of_the_king-178294596-mmed.jpg",
-      "categoria": "bebida-fria",
-      "id": 7
-    },
-    {
-      "nombreProductoaa": "cafe",
-      "precio": "145",
-      "imagen": "https://scene7.zumiez.com/is/image/zumiez/product_main_medium_2x/Vitriol-Live-Forever-Black-T-Shirt-_344812-front-US.jpg",
-      "categoria": "dulce",
-      "id": 8
-    },
-    {
-      "nombreProducto": "Fanta",
-      "precio": "300",
-      "imagen": "https://scene7.zumiez.com/is/image/zumiez/product_main_medium_2x/Vitriol-Live-Forever-Black-T-Shirt-_344812-front-US.jpg",
+      "nombreProducto": "Tortillas x5",
+      "precio": "200",
+      "imagen": "https://cdn.shopify.com/s/files/1/0620/0229/9104/products/godzilla-japanese-shirt_723b22db-81ef-4d01-8cfb-7241f3da73ee_9",
       "categoria": "salado",
-      "id": 9
+      "id": 5
     }
   ]
 }

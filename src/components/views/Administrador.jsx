@@ -48,7 +48,7 @@ const Administrador = () => {
           </tr>
         </thead>
         <tbody>
-          {/* aqui tengo que hacer un map
+          {/* aqui tengo que hacer un map  */}
           {
             // opcion 1
             // productos.map((producto)=> {return <ItemProducto key={producto.id} producto={producto}></ItemProducto>} )
@@ -56,7 +56,7 @@ const Administrador = () => {
             // productos.map((producto)=> <ItemProducto key={producto.id} {...producto}></ItemProducto> )
             // opcion 3
             productos.map((producto)=> <ItemProducto key={producto.id} producto={producto}></ItemProducto> )
-          } */}
+          }
         </tbody>
       </Table>
     </section>
