@@ -1,25 +1,67 @@
 {
-    "productos":[
-        {
-            "nombreProducto":"café",
-            "imagen":"https://images.pexels.com/photos/11942622/pexels-photo-11942622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "precio": 300,
-            "categoria":"bebida-caliente",
-            "id":1    
-        },
-        {
-            "nombreProducto":"brownie",
-            "imagen":"https://images.pexels.com/photos/11942622/pexels-photo-11942622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "precio": 250,
-            "categoria":"dulce",
-            "id":2    
-        },
-        {
-            "nombreProducto":"licuado",
-            "imagen":"https://images.pexels.com/photos/11942622/pexels-photo-11942622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "precio": 450,
-            "categoria":"bebida-fria",
-            "id":3    
-        }
-    ]
+  "productos": [
+    {
+      "nombreProducto": "café",
+      "imagen": "https://images.pexels.com/photos/11942622/pexels-photo-11942622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "precio": 300,
+      "categoria": "bebida-caliente",
+      "id": 1
+    },
+    {
+      "nombreProducto": "brownie",
+      "imagen": "https://images.pexels.com/photos/11942622/pexels-photo-11942622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "precio": 250,
+      "categoria": "dulce",
+      "id": 2
+    },
+    {
+      "nombreProducto": "licuado",
+      "imagen": "https://images.pexels.com/photos/11942622/pexels-photo-11942622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "precio": 450,
+      "categoria": "bebida-fria",
+      "id": 3
+    },
+    {
+      "nombreProducto": "cafe",
+      "precio": "1534",
+      "imagen": "https://www.youtube.com/",
+      "categoria": "dulce",
+      "id": 4
+    },
+    {
+      "nombreProducto": "Te",
+      "precio": "300",
+      "imagen": "https://pics.filmaffinity.com/the_avengers-439499921-mmed.jpg",
+      "categoria": "bebida-fria",
+      "id": 5
+    },
+    {
+      "nombreProducto": "asdasd",
+      "precio": "123",
+      "imagen": "https://scene7.zumiez.com/is/image/zumiez/product_main_medium_2x/Primitive-x-Naruto-Shippuden-Hidan-Black-Coaches-Jacket-_363534-front-US.jpg",
+      "categoria": "dulce",
+      "id": 6
+    },
+    {
+      "nombreProducto": "cafe",
+      "precio": "123",
+      "imagen": "https://pics.filmaffinity.com/the_lord_of_the_rings_the_return_of_the_king-178294596-mmed.jpg",
+      "categoria": "bebida-fria",
+      "id": 7
+    },
+    {
+      "nombreProductoaa": "cafe",
+      "precio": "145",
+      "imagen": "https://scene7.zumiez.com/is/image/zumiez/product_main_medium_2x/Vitriol-Live-Forever-Black-T-Shirt-_344812-front-US.jpg",
+      "categoria": "dulce",
+      "id": 8
+    },
+    {
+      "nombreProducto": "Fanta",
+      "precio": "300",
+      "imagen": "https://scene7.zumiez.com/is/image/zumiez/product_main_medium_2x/Vitriol-Live-Forever-Black-T-Shirt-_344812-front-US.jpg",
+      "categoria": "salado",
+      "id": 9
+    }
+  ]
 }
