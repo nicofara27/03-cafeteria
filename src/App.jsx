@@ -30,7 +30,7 @@ function App() {
         ></Route>
         <Route
           exact
-          path="/administrar/editar"
+          path="/administrar/editar/:id"  //Los dos puntos significan que luego de estos va un parametro
           element={<EditarProducto></EditarProducto>}
         ></Route>
         <Route
