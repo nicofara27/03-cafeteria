@@ -20,6 +20,27 @@
       "imagen": "https://cdn.shopify.com/s/files/1/0620/0229/9104/products/godzilla-japanese-shirt_723b22db-81ef-4d01-8cfb-7241f3da73ee_9",
       "categoria": "salado",
       "id": 5
+    },
+    {
+      "nombreProducto": "Licuado",
+      "precio": "420",
+      "imagen": "https://scene7.zumiez.com/is/image/zumiez/product_main_medium_2x/Vitriol-Live-Forever-Black-T-Shirt-_344812-front-US.jpg",
+      "categoria": "bebida-fria",
+      "id": 6
+    }
+  ],
+  "usuarios": [
+    {
+      "nombre": "Juan Perez",
+      "email": "juanperez@gmail.com",
+      "contraseña": "12345678",
+      "id": 1
+    },
+    {
+      "nombre": "Nicolas Fara",
+      "email": "nicolasfara@gmail.com",
+      "contraseña": "12345678",
+      "id": 2
     }
   ]
 }

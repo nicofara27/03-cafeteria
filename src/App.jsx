@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Inicio from "./components/views/Inicio";
+import Registro from "./components/views/Registro";
+import InicioSesion from "./components/views/InicioSesion";
 import Administrador from "./components/views/Administrador";
 import Error404 from "./components/views/Error404";
 import DetalleProducto from "./components/views/DetalleProducto";
@@ -20,6 +22,16 @@ function App() {
         <Route exact path="/" element={<Inicio></Inicio>}></Route>
         <Route
           exact
+          path="/ingresar"
+          element={<InicioSesion></InicioSesion>}
+        ></Route>
+        <Route
+          exact
+          path="/registro"
+          element={<Registro></Registro>}
+        ></Route>
+        <Route
+          exact
           path="/administrar"
           element={<Administrador></Administrador>}
         ></Route>
@@ -35,7 +47,7 @@ function App() {
         ></Route>
         <Route
           exact
-          path="/detalle-producto"
+          path="/detalle/:id"
           element={<DetalleProducto></DetalleProducto>}
         ></Route>
         <Route path="*" element={<Error404></Error404>}></Route>

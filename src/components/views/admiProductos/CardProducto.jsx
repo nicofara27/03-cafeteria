@@ -1,20 +1,23 @@
 import React from "react";
-import { Button, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
-const CardProducto = () => {
+const CardProducto = ({producto}) => {
+  const {nombreProducto, categoria, imagen, precio, id} = {...producto} 
   return (
-    <Card className="my-4">
+    <Card className="my-4 cardProducto">
       <Card.Img
         variant="top"
-        src="https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        src={imagen}
+        alt={nombreProducto}
         className="img-fluid"
       />
       <Card.Body>
-        <Card.Title>Brownie</Card.Title>
-        <Card.Text>Precio: $400</Card.Text>
+        <Card.Title>{nombreProducto}</Card.Title>
+        <Card.Text>Precio: ${precio}</Card.Text>
       </Card.Body>
       <Card.Footer>
-        <Button className="btn btn-danger me-2">Ver más</Button>
+        <Link className="btn btn-danger me-2" to={`/detalle/${id}`}>Ver más</Link>
       </Card.Footer>
     </Card>
   );

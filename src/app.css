@@ -7,3 +7,13 @@
 .mainSection{
     flex-grow: 1;
 }
+
+#productosContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cardProducto{
+    width: 22%;
+}
