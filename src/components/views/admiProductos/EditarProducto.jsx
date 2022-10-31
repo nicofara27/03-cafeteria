@@ -15,13 +15,11 @@ const EditarProducto = () => {
 
   //Buscamos el parametro de la url
   const {id} = useParams();
-  
   const navegacion = useNavigate();
 
   useEffect(()=>{
     obtenerProductoAPI(id).then((respuesta)=>{
       if(respuesta.status === 200){
-        console.log(respuesta)
         setValue('nombreProducto', respuesta.dato.nombreProducto)
         setValue('precio', respuesta.dato.precio)
         setValue('imagen', respuesta.dato.imagen)
