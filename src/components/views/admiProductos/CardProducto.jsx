@@ -3,7 +3,8 @@ import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const CardProducto = ({producto}) => {
-  const {nombreProducto, categoria, imagen, precio, id} = {...producto} 
+  const {nombreProducto, categoria, imagen, precio, _id} = {...producto} 
+
   return (
     <Card className="my-4 cardProducto">
       <Card.Img
@@ -17,7 +18,7 @@ const CardProducto = ({producto}) => {
         <Card.Text>Precio: ${precio}</Card.Text>
       </Card.Body>
       <Card.Footer>
-        <Link className="btn btn-danger me-2" to={`/detalle/${id}`}>Ver más</Link>
+        <Link className="btn btn-danger me-2" to={`/detalle/${_id}`}>Ver más</Link>
       </Card.Footer>
     </Card>
   );
