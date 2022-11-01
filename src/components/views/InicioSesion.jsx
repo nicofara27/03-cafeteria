@@ -16,7 +16,6 @@ const InicioSesion = () => {
   const navegacion = useNavigate();
 
   const onSubmit = (datos) => {
-    console.log(datos.email);
     //Enviar la peticion a la API
     consultarUsuariosAPI(datos).then((respuesta) => {
       if (

@@ -16,10 +16,8 @@ const CrearProducto = () => {
   const navegacion = useNavigate();
 
   const onSubmit = (datos) => {
-    console.log(datos);
     //Enviar la peticion a la API
     crearProductoAPI(datos).then((respuesta)=> {
-      console.log(respuesta)
       //Si la respuesta es correcta indicarle al usuario
       if(respuesta.status === 201) {
         Swal.fire("Producto creado","El producto fue creado exitosamente", "success")

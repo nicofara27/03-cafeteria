@@ -10,9 +10,7 @@ const DetalleProducto = () => {
   useEffect(() => {
     obtenerProductoAPI(id).then((respuesta) => {
       if (respuesta.status === 200) {
-        console.log(respuesta.dato);
         setProducto(respuesta.dato);
-        console.log(producto);
       }
     });
   }, []);

@@ -26,10 +26,9 @@ const EditarProducto = () => {
         setValue('categoria', respuesta.dato.categoria)
       }
     })
-  },[])
+  },[]);
   
   const onSubmit = (datos)=> {
-    console.log(datos);
     editarProductoAPI(id, datos).then((respuesta)=> {
       if(respuesta.status===200) {
         Swal.fire('Pruducto editado', 'El producto fue actualizado correctamente', 'success')

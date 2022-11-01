@@ -7,7 +7,6 @@ import {Link} from 'react-router-dom';
 
 const Administrador = () => {
   const [productos, setProductos] = useState([]);
-  console.log(productos)
 
   useEffect(() => {
     consultarAPI().then(

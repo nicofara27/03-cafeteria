@@ -16,10 +16,10 @@ const Registro = () => {
   const navegacion = useNavigate();
 
   const onSubmit = (datos) => {
-    console.log(datos);
+
     //Enviar la peticion a la API
     crearUsuarioAPI(datos).then((respuesta) => {
-      console.log(respuesta);
+  
       //Si la respuesta es correcta indicarle al usuario
       if (respuesta.status === 201) {
         Swal.fire(

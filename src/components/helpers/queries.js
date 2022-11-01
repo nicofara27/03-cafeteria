@@ -6,7 +6,7 @@ const URL2 = process.env.REACT_APP_API_USUARIOS;
 // peticion DELETE cuando le pedimos a la api borrar un producto
 
 export const consultarAPI = async () => {
-  console.log(URL);
+
   try {
     const respuesta = await fetch(URL);
     const listaProductos = await respuesta.json();
@@ -18,10 +18,10 @@ export const consultarAPI = async () => {
 };
 
 export const obtenerProductoAPI = async (id) => {
-  console.log(URL);
+
   try {
     const respuesta = await fetch(URL + "/" + id);
-    console.log(respuesta);
+
     const producto = {
       dato: await respuesta.json(),
       status: respuesta.status
@@ -34,7 +34,7 @@ export const obtenerProductoAPI = async (id) => {
 };
 
 export const crearProductoAPI = async (producto) => {
-  console.log(URL);
+
   try {
     const respuesta = await fetch(URL, {
       method: "POST",
@@ -50,7 +50,7 @@ export const crearProductoAPI = async (producto) => {
   }
 };
 export const editarProductoAPI = async (id, producto) => {
-  // console.log(URL)
+
   try {
     const respuesta = await fetch(URL + "/" + id, {
       method: "PUT",
@@ -59,6 +59,7 @@ export const editarProductoAPI = async (id, producto) => {
       },
       body: JSON.stringify(producto),
     });
+
     return respuesta;
   } catch (error) {
     console.log(error);
@@ -67,7 +68,7 @@ export const editarProductoAPI = async (id, producto) => {
 };
 
 export const borrarProductoAPI = async (id) => {
-  // console.log(URL)
+
   try {
     const respuesta = await fetch(URL + "/" + id, {
       method: "DELETE",
@@ -82,7 +83,7 @@ export const borrarProductoAPI = async (id) => {
 //Usuarios
 
 export const consultarUsuariosAPI = async () => {
-  console.log(URL2);
+
   try {
     const respuesta = await fetch(URL2);
     const listaUsuarios = await respuesta.json();
@@ -94,7 +95,7 @@ export const consultarUsuariosAPI = async () => {
 };
 
 export const crearUsuarioAPI = async (usuario) => {
-  console.log(URL2);
+
   try {
     const respuesta = await fetch(URL2, {
       method: "POST",
