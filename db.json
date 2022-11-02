@@ -41,6 +41,12 @@
       "email": "nicolasfara@gmail.com",
       "contraseña": "12345678",
       "id": 2
+    },
+    {
+      "nombre": "nicolas fara",
+      "email": "nicolasfara@gmail.com",
+      "contraseña": "12345678",
+      "id": 3
     }
   ]
 }

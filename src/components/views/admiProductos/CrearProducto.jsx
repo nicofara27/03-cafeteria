@@ -8,6 +8,7 @@ const CrearProducto = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
       
   } = useForm();
