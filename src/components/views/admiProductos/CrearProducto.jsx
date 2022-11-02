@@ -9,7 +9,7 @@ const CrearProducto = () => {
     register,
     handleSubmit,
     formState: { errors },
-    reset
+      
   } = useForm();
 
   //Inicialar useNavigate
